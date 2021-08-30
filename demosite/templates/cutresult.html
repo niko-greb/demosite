@@ -1,0 +1,13 @@
+{{ define "cutresult"}}
+{{ template "header" }}
+<section class="px-3 center_blocks min_height">
+  <h1 class=""> {{ .Url }}</h1>
+  <p class="lead">{{ .ShortUrl }}</p>
+  <p>{{ .Comment }}</p>
+
+  <p class="lead">
+    <button class="btn_big"><a href="/" class="big_text">На главную</a></button>
+  </p>
+</section>
+{{ template "footer" }}
+{{ end }}

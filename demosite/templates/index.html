@@ -1,0 +1,24 @@
+{{ define "index"}}
+{{ template "header" }}
+<main class="main_block center_blocks min_height">
+    <h1 class="title center">Нубинион</h1>
+    <p class="lead lead_title center"><b>Дисклеймер: </b>Это демо сайт, короткие ссылки не работают!</p>
+    <div class="url_block">
+        {{ range . }}
+        <div class="alert">
+            <h2>{{ .ShortUrl }}</h2>
+            <p class="lead">{{ .Comment }}</p>
+            <button class="btn_small"><a href="/urls/{{ .Id }}" class="btn_link">Куда? хочу полную!</a></button>
+        </div>
+        {{ else }}
+        <p class="lead">Ссылок нет</p>
+        {{ end }}
+
+
+            <button class="btn_big"><a href="#" class="big_text">Все ссылки</a></button>
+
+    </div>
+
+</main>
+{{ template "footer" }}
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "cutter"}}
+{{ template "header" }}
+<section role="main" class="inner center_blocks min_height">
+    <h1 class="title">Сокращатель ссылок</h1>
+    <form action="/cutresult" method="post">
+        <input type="text" name="cutterurl" id="cutterurl" placeholder="Введите ссылку..." class="form_control, solo_line"><br>
+        <textarea name="comment" id="comment" class="form_control big_text" placeholder="Описание сайта"></textarea>
+        <button class="btn_small btn_cutter">Получить короткую</button>
+    </form>
+
+</section>
+{{ template "footer" }}
+{{ end }}
