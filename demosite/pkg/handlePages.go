@@ -23,7 +23,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, err.Error())
 	}
 
-	db, err := sql.Open("mysql", "test:test@tcp(10.0.0.246)/urls?parseTime=true")
+	db, err := sql.Open("mysql", "test:test@tcp(127.0.0.1:3306)/urls?parseTime=true")
 	if err != nil {
 		panic(err)
 	}
@@ -71,7 +71,7 @@ func showUrls(w http.ResponseWriter, r *http.Request) {
 	}
 	vars := mux.Vars(r)
 	w.WriteHeader(http.StatusOK)
-	db, err := sql.Open("mysql", "test:test@tcp(10.0.0.246)/urls?parseTime=true")
+	db, err := sql.Open("mysql", "test:test@tcp(127.0.0.1:3306)/urls?parseTime=true")
 	if err != nil {
 		panic(err)
 	}
