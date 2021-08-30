@@ -52,7 +52,7 @@ func insertToDB(cuturl, shortyUrl , comment string, w http.ResponseWriter, r *ht
 	if cuturl == "" {
 		fmt.Fprint(w, "Лазанья!")
 	} else {
-		db, err := sql.Open("mysql", "test:test@tcp(10.0.0.246)/urls?parseTime=true")
+		db, err := sql.Open("mysql", "test:test@tcp(127.0.0.1:3306)/urls?parseTime=true")
 		if err != nil {
 			panic(err)
 		}
