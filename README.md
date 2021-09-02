@@ -1,4 +1,5 @@
 # demosite
 Демонстрационный сайт покажет работу с кодом.
 
-![Newbinion](https://user-images.githubusercontent.com/82241673/131835227-cc137ad3-e8a3-4d38-8fca-dde24d85e068.gif)
+![Peek 2021-09-02 20-00](https://user-images.githubusercontent.com/82241673/131886515-880ff228-db94-4f43-8e86-8005372aa2b9.gif)
+
